@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="sidebar"><img src="right.png"></div>
+  <div class="chat-wrapper">
+    <div class="chat-header">Chat</div>
+    <div id="chat"></div>
+    <div class="chat-footer">
+      <input id="input" placeholder="Enter your message..." autocomplete="off">
+    </div>
+  </div>
+  <div class="sidebar"><img src="right.png"></div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

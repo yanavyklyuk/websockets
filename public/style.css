@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8f5e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto minmax(420px, 500px) auto;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: none;
+}
+
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    max-height: 650px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #c8e6c9;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2e7d32;
+    user-select: none;
+}
+
+#chat {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    background: #f1f8f2;
+}
+
+#chat .message {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat .message .name {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 3px;
+}
+
+#chat .message.mine {
+    align-self: flex-end;
+    background: #a5d6a7;
+    color: #1b262c;
+}
+
+#chat .message.other {
+    align-self: flex-start;
+    background: #c8e6c9;
+    color: #1b262c;
+}
+
+#chat div.system {
+    align-self: center;
+    background: #fff3e0;
+    color: #6b4f4f;
+    font-style: italic;
+    text-align: center;
+    user-select: none;
+}
+
+.chat-footer {
+    padding: 12px;
+    background: #dcedc8;
+}
+
+#input {
+    width: 94%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+    background: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    color: #2e7d32;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+#input::placeholder {
+    color: #81c784;
+}
+
+#input:focus {
+    background-color: #e8f5e9;
+}
